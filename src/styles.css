@@ -1,8 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 /* Navigation */
+body{
+    padding: 0px!important;
+    margin: 0px!important;
+}
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+    .jsc{
+        justify-content: center!important;
+    }
+    .nav-bg{background-color: #f2f2f2!important;
+    padding: 15px 0px;}
 #navbar {
     flex-direction: column;
+}
+
+.navbar-nav .item a{
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin: 0px 5px;
+    
+}
+.navbar-nav .item a:hover{
+    color: #000000;
+    background-color: bisque;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0px 5px;
+    border-radius: 10px;
 }
 
 #navbar ul li a{
@@ -12,12 +53,12 @@
 }
 /* Home section */
 #home{
-    height: 370px; 
+    height: auto!important; 
     padding: 3px 28px;
 }
 
 #home::before{
-    height: 480px; 
+    height: auto; 
 }
 
 #home p{
@@ -96,14 +137,7 @@ html{
 }
 
 /* Navigation Bar: Logo and Image */
-#logo{
-    margin: 10px 34px;
-}
 
-#logo img{
-    height: 59px;
-    margin: 3px 6px;
-}
 
 
 /* Navigation Bar: List Styling */
@@ -283,7 +317,7 @@ footer{
     padding: 14px;
 }
 
-.btn{
+.register-btn{
     padding: 6px 20px;
     border: 2px solid white;
     background-color: brown;
@@ -294,6 +328,18 @@ footer{
     cursor:pointer;
 }
 
+.form-register-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    
+    font-size: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    cursor:pointer;
+
+}
 .center{
     text-align: center;
 }
@@ -320,7 +366,7 @@ footer{
     -webkit-text-fill-color: transparent;
     animation: gradient 5s linear infinite;
      padding-top: 40px;
-     margin-left: 30px;
+   
     font-size: 24px;
     color:rgb(26, 153, 212); 
 }
@@ -330,4 +376,86 @@ footer{
 .site_logo{
     height: 110px;
     width: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+    #home{
+        height: auto!important; 
+        padding: 0px;
+       
+    }
+    #home  img{
+        width: 100%!important;
+    }
+
+    .site_name_english{
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #333;
+        position: relative;
+        display: inline-block;
+        padding: 10px 0px;
+        background: linear-gradient(120deg, #77529b, #679bcf);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 5s linear infinite;
+         padding-top: 10px;
+               color:rgb(26, 153, 212); 
+    }
+
+    /* Services Section */
+#services{
+    margin: 0px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 10px 10px;
+    margin: 0px 0px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   width: 200px;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    padding-top:10px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 10px;
+}
+.client-item{
+    padding: 0px;
+}
+
+
+#contact-box form{
+    width: 80%;
+
+    
+}
+#contact-box form .form-register-btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 0px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+
+}
 }
