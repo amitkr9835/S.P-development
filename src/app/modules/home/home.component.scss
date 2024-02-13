@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+* {
+    font-family: 'Montserrat';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#home {
+    .center {
+        text-align: center;
+    }
+    .image-section {
+        img {width: 100%;}
+    }
+    .main-heading {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: bold;
+        color: #000000;
+    }
+    .section-text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        font-weight: normal;
+    }
+    .section-heading{
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        font-weight: 700;
+        padding: 15px 0px;
+    }
+
+    .gallary-flex{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0px;
+        .client-item {
+            padding: 0px;
+        }
+        .client-item img {
+           width: 250px;
+           height: 250px;
+        }
+        
+        
+    }
+}
+
+/* Services section  */
+#services {
+    flex-direction: column;
+    margin: 34px;
+    display: flex;
+    .box {
+        padding: 14px;
+        margin: 10px 25px;
+        border: 2px solid brown;
+       border-radius: 28px;
+    background: #f2f2f2;
+    img {
+        height: 160px;
+        margin: auto;
+        display: block;
+        width: 200px;
+    }
+    }    
+}
+
+
+
+
+/* Clients Section */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 40px;
+}
+
+#clients img {
+    height: 240px;
+    width: 200px;
+}
+
+
+/* Contact us section */
+#contact{
+    padding: 60px 0px 10px 0px;
+#contact-box form {
+    width: 60%;
+}
+label{font-weight: bold;}
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 14px;
+    margin: 5px 0px 10px 0px;
+}
+
+#contact-box form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.register-btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.7px;
+}
+
+.form-register-btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 10px 0px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #home {
+        .center {
+            text-align: center;
+        }
+        .image-section {
+            img {width: 100%;}
+        }
+        .main-heading {
+            font-size: 24px;
+            line-height: 30px;
+            
+        }
+        .section-text {
+            font-size: 14px;
+            line-height: 20px;
+            
+        }
+        .section-heading{
+            font-size: 20px;
+            line-height: 26px;
+                       padding: 10px 0px;
+        }
+    
+        .gallary-flex{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px 0px;
+            flex-wrap: wrap;
+            .client-item {
+                padding: 0px;
+                margin: 10px 0px;
+            }
+            .client-item img {
+               width: 300px;
+               height: 250px;
+            }
+            
+            
+        }
+    }
+
+
+/* Services section  */
+#services {
+    flex-direction: column;
+    margin: 0px 0px;
+    display: flex;
+    .box {
+        padding: 14px;
+        margin: 5px 0px 10px 0px;
+        border: 2px solid brown;
+       border-radius: 28px;
+    background: #f2f2f2;
+    img {
+        height: 160px;
+        margin: auto;
+        display: block;
+        width: 200px;
+    }
+    }    
+}
+
+.gallery-text{
+    padding: 0px 10px;
+}
+
+/* Contact us section */
+#contact{
+    padding: 60px 0px 10px 0px;
+#contact-box form {
+    width: 90%;
+}
+label{font-weight: bold;}
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 14px;
+    margin: 5px 0px 5px 0px;
+}
+
+
+
+
+
+}
