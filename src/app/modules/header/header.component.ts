@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router, RouterLinkActive } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterEvent, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import { ActivatedRoute, Router, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
- 
+  activeRouterLink: any;
 
   constructor(private router: Router, private route: ActivatedRoute){
 
