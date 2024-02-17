@@ -12,6 +12,11 @@ const routes: Routes = [
   import("./modules/about/about.module").then (
     (m) => m.aboutmodule),
      },
+     { path: 'registrationform',
+    loadChildren: () =>
+  import("./modules/registrationform/registrationform.module").then (
+    (m) => m.registrationformmodule),
+     },
 
 ];
 
