@@ -7,6 +7,16 @@ const routes: Routes = [
   import("./modules/home/home.module").then (
     (m) => m.homemodule),
      },
+     { path: 'about',
+    loadChildren: () =>
+  import("./modules/about/about.module").then (
+    (m) => m.aboutmodule),
+     },
+     { path: 'registrationform',
+    loadChildren: () =>
+  import("./modules/registrationform/registrationform.module").then (
+    (m) => m.registrationformmodule),
+     },
 
 ];
 

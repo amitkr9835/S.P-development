@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-registrationform',
-  standalone: true,
-  imports: [],
   templateUrl: './registrationform.component.html',
-  styleUrl: './registrationform.component.css'
+  styleUrl: './registrationform.component.scss'
 })
 export class RegistrationformComponent {
 
