@@ -12,3 +12,8 @@
     font-weight: 700;
     padding: 15px 0px;
 }
+.active {
+    color: #FFFFFF!important;
+    background-color: rgb(247, 146, 24);
+    border-radius: 10px;
+  }

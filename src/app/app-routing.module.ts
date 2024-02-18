@@ -17,14 +17,18 @@ const routes: Routes = [
   import("./modules/registrationform/registrationform.module").then (
     (m) => m.registrationformmodule),
      },
+     { path: 'enquiryform',
+    loadChildren: () =>
+  import("./modules/enquiryform/enquiryform.module").then (
+    (m) => m.enquiryformmodule),
+     },
 
 ];
 
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forRoot(routes, {useHash: false, scrollPositionRestoration: 'enabled'})
-  ],
+    RouterModule.forRoot(routes )],
   exports:[RouterModule]
 })
 
