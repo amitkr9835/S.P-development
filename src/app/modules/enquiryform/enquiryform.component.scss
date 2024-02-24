@@ -1,9 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+* {
+    font-family: 'Montserrat';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 #contact{
     padding: 60px 0px 10px 0px;
 #contact-box form {
     width: 60%;
 }
 label{font-weight: bold;}
+.register-heading{
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 700;
+    padding: 15px 0px;
+    text-align: center;
+}
 }
 
 #contact-box input,
@@ -49,4 +65,24 @@ label{font-weight: bold;}
     width: 100%;
     cursor: pointer;
 
+}
+
+@media only screen and (max-width: 767px) {
+    #contact{
+        padding: 10px 0px 10px 0px;
+    #contact-box form {
+        width: 90%;
+    }
+    .register-heading{
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        font-weight: 700;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    
+    }
+    
+    
 }

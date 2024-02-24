@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-enquiryform',
   
@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './enquiryform.component.scss'
 })
 export class EnquiryformComponent {
+  constructor(private router: Router  ) { }
 
+  ngOnInit(): void { }
+
+  onClickHomeRedirect(){
+
+    this.router.navigate(['/']);
+  }
 }

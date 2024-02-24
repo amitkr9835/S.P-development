@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HeaderComponent } from './modules/header/header.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { RegistrationformComponent} from './modules/registrationform/registrationform.component';
+import { EnquiryformComponent } from './modules/enquiryform/enquiryform.component';
 @NgModule ({
     declarations: [
         AppComponent,
@@ -16,7 +17,8 @@ import { RegistrationformComponent} from './modules/registrationform/registratio
         HeaderComponent,
         FooterComponent,
         AboutComponent,
-        RegistrationformComponent
+        RegistrationformComponent,
+        EnquiryformComponent
     ],
     imports: [
         BrowserModule,
