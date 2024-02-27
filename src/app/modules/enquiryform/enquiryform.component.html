@@ -1,7 +1,11 @@
-
+<body>
+  <app-header></app-header>
+        
+  <div class="container">
+  
 
 <section id="contact">
-    <div class="register" style="text-align: center;font-size: 22px;  line-height: 22px;    font-weight: bold;">TENDER ENQUIRY FORM</div>
+    <div class="register-heading">TENDER ENQUIRY FORM</div>
     <div class="row">
       <div id="contact-box">
         <form action="">
@@ -19,8 +23,13 @@
             <textarea name="message" id="message" cols="30" rows="4"></textarea>
           </div>
 
-          <button class="btn form-register-btn">Submit</button>
+          <button class="btn form-register-btn" (click)="onClickHomeRedirect()">Submit</button>
         </form>
       </div>
     </div>
   </section>
+
+  </div>
+  <app-footer></app-footer>
+
+  </body>
